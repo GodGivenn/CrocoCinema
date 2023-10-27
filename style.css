@@ -129,27 +129,14 @@ button:hover {
     border-radius: 5px;
 }
 
-.image-colage {
+.imgrow {
     flex: 2;
     background-color: #081100; /* Culoarea de fundal pentru imaginile din dreapta */
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     flex-wrap: wrap; /* Imaginile să fie pe mai multe rânduri dacă depășesc spațiul disponibil */
-    padding: 20px;
+    padding: 0 4px;
     gap: 10px; /* Spațiu între imagini */
-}
-
-.image-colage img {
-    max-width: 100%; /* Imaginile nu vor depăși lățimea containerului */
-    height: auto;
-    border: none;
-}
-
-.crop-image1{
-    object-fit: cover;
-    object-position: center top;
-    width: 100%;
-    height: 200%;
+    align-items: center;
 }
 
 @media (max-width: 767px) {
@@ -161,7 +148,7 @@ button:hover {
         margin-left: 0; /* Eliminăm marginea din stânga */
     }
 
-    .image-colage {
+    .imgrow {
         margin-left: 0; /* Eliminăm marginea din stânga */
     }
 
@@ -186,4 +173,24 @@ button:hover {
         border-radius: 50px;
         transition: transform 0.5s, border-radius 0.4s;
     }
+}
+
+.croco-pian,
+.croco-rau {
+    max-width: 100%;
+    width: 100%;
+    height:fit-content;
+}
+
+.imgcolumn {
+    flex: 1; /* Le facem flexibil pe amândouă */
+    padding: 0 4px;
+    display: flex;
+    flex-direction: column; /* Le plasăm vertical */
+    align-items: center; /* Le centram orizontal */
+}
+
+.imgcolumn img {
+    margin-top: 8px;
+    vertical-align: middle;
 }
