@@ -1,86 +1,89 @@
 <!DOCTYPE html>
 <html lang="ro">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CrocoCinema</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
-        
-        <div>
-            <img class="logo" src="assets/logo.png" alt="logo">
-            <i class="fas fa-bars icon"></i>
-            <img class="croco_fundal" src="assets/croco-fundal.png" alt="croco-fundal failed loading">
-            
-            <form class="location_date_input">
-                <div class="column">
-                    <div class="title">Cinema</div>
-                    <select name="cinema" id="cinema" required>
-                        <option value="" selected>Alege cinema-ul</option>
-                        <option value="cinemaBucuresti">Crococinema București</option>
-                        <option value="cinemaCluj">Crococinema Cluj</option>
-                        <option value="cinemaIasi">Crococinema Iași</option>
-                        <option value="cinemaGalati">Crococinema Galați</option>
-                    </select>
-                    <div id="cinema-error" class="error"></div>
-                </div>
-                <div class="column">
-                    <div class="title">Data</div>
-                    <input type="date" name="date" id="date" required>
-                    <div id="date-error" class="error"></div>
-                </div>
-                <div class="column">
-                    <button type="submit" id="submit-button">Submit</button>
-                </div>
-            </form>
-        </div>
+      <div>
+        <img class="logo" src="assets/logo.png" alt="logo" />
+        <i class="fas fa-bars icon"></i>
+        <img
+          class="croco_fundal"
+          src="assets/croco-fundal.png"
+          alt="croco-fundal failed loading"
+        />
+
+        <form class="location_date_input">
+          <div class="column">
+            <div class="title">Cinema</div>
+            <select name="cinema" id="cinema" required>
+              <option value="" selected>Alege cinema-ul</option>
+              <option value="cinemaBucuresti">Crococinema București</option>
+              <option value="cinemaCluj">Crococinema Cluj</option>
+              <option value="cinemaIasi">Crococinema Iași</option>
+              <option value="cinemaGalati">Crococinema Galați</option>
+            </select>
+            <div id="cinema-error" class="error"></div>
+          </div>
+          <div class="column">
+            <div class="title">Data</div>
+            <input type="date" name="date" id="date" required />
+            <div id="date-error" class="error"></div>
+          </div>
+          <div class="column">
+            <button type="submit" id="submit-button">Submit</button>
+          </div>
+        </form>
+      </div>
     </div>
 
-    <br><br><br>
+    <br /><br /><br />
     <div class="grid-container">
-        <div class="text-box">
-            <p>Crococinema este un loc magic unde lumea fascinantă a filmului poate să se
-                relaxeze alături de noi, dând naștere unei experiențe de neuitat pentru toți vizitatorii.
-                Crococinema este situat într-un mediu natural, cu vegetație pompoasă și lacuri
-                cristaline, oferind o atmosferă deosebit de plăcută. Odată intrați, vizitatorii sunt
-                invitați înăuntru să descopere minunile cinematografiei.<br><br>Aici, veți găsi o sală de
-                cinema modernă, dotată cu tehnologie de ultimă generație, unde se proiectează cele
-                mai noi filme din toate genurile. Astfel, CrocoCinema este destinația ideală pentru o
-                ieșire în orice perioadă a zilei, cu prietenii sau familia. Vă garantăm că va fi cea mai
-                bombastică experiență, unde fiecare moment este plin de surprize și încântare.<br><br>În
-                plus, complexul oferă o gamă variată de facilități și activități interactiv, cum ar fi
-                hrănirea crocodililor sau excursii pe barci pentru a explora mai aproape lumea
-                fascinantă a acestor creaturi uimitoare. Crococinema reprezintă un loc unde pe
-                langa vizionarea filmelor, distracția isi face aparitia, in acest fel fiecare vizită
-                devenind o experiență unică și memorabilă.</p>
-        </div>
-        
-        <div class="image-colage">
-            <img src="assets/img1.png" alt="croco-pian" class="crop-image1">
-            <!-- <img src="assets/img2.png"> -->
-            <!-- <img src="assets/img3.jpg"> -->
-            <!-- <img src="assets/img4.jpg"> -->
-        </div>
+      <div class="text-box">
+        <p>
+            Crococinema este un loc magic unde lumea fascinantă a filmului poate
+            să se relaxeze alături de noi, dând naștere unei experiențe de neuitat
+            pentru toți vizitatorii. Crococinema este situat într-un mediu
+            natural, cu vegetație pompoasă și lacuri cristaline, oferind o
+            atmosferă deosebit de plăcută. Odată intrați, vizitatorii sunt
+            invitați înăuntru să descopere minunile cinematografiei.<br /><br />Aici,
+            veți găsi o sală de cinema modernă, dotată cu tehnologie de ultimă
+            generație, unde se proiectează cele mai noi filme din toate genurile.
+            Astfel, CrocoCinema este destinația ideală pentru o ieșire în orice
+            perioadă a zilei, cu prietenii sau familia. Vă garantăm că va fi cea
+            mai bombastică experiență, unde fiecare moment este plin de surprize
+            și încântare.<br /><br />În plus, complexul oferă o gamă variată de
+            facilități și activități interactiv, cum ar fi hrănirea crocodililor
+            sau excursii pe barci pentru a explora mai aproape lumea fascinantă a
+            acestor creaturi uimitoare. Crococinema reprezintă un loc unde pe
+            langa vizionarea filmelor, distracția isi face aparitia, in acest fel
+            fiecare vizită devenind o experiență unică și memorabilă.
+        </p>
+      </div>
+
+      <div class="image-colage">
+        <img src="assets/img1.png" alt="croco-pian" class="crop-image1" />
+        <!-- <img src="assets/img2.png"> -->
+        <!-- <img src="assets/img3.jpg"> -->
+        <!-- <img src="assets/img4.jpg"> -->
+      </div>
     </div>
 
-<br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br>
-</body>
-
-
-
-
-
-
-
-
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  </body>
 </html>
