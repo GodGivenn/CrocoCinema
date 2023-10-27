@@ -16,10 +16,10 @@
             <i class="fas fa-bars icon"></i>
             <img class="croco_fundal" src="assets/croco-fundal.png" alt="croco-fundal failed loading">
             
-            <div class="location_date_input">
+            <form class="location_date_input">
                 <div class="column">
                     <div class="title">Cinema</div>
-                    <select name="cinema" id="cinema">
+                    <select name="cinema" id="cinema" required>
                         <option value="" selected>Alege cinema-ul</option>
                         <option value="cinemaBucuresti">Crococinema București</option>
                         <option value="cinemaCluj">Crococinema Cluj</option>
@@ -30,13 +30,13 @@
                 </div>
                 <div class="column">
                     <div class="title">Data</div>
-                    <input type="date" name="date" id="date">
+                    <input type="date" name="date" id="date" required>
                     <div id="date-error" class="error"></div>
                 </div>
                 <div class="column">
-                    <button type="button" id="submit-button">Submit</button>
+                    <button type="submit" id="submit-button">Submit</button>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
 

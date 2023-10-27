@@ -72,17 +72,18 @@ input{
     margin: 10px 0;
 }
 
+select[name="cinema"]{
+    width: 70%;
+    height:35px;
+    border-radius: 50px;
+}
 
 input[type="date"]{
     width: 70%;
     height: 10px;
     border-radius: 50px;
 }
-select[name="cinema"]{
-    width:100%;
-    height:35px;
-    border-radius: 50px;
-}
+
 button{
     width: 50%;
     padding: 10px;
@@ -149,4 +150,40 @@ button:hover {
     object-position: center top;
     width: 100%;
     height: 200%;
+}
+
+@media (max-width: 767px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* O singură coloană */
+    }
+
+    .text-box {
+        margin-left: 0; /* Eliminăm marginea din stânga */
+    }
+
+    .image-colage {
+        margin-left: 0; /* Eliminăm marginea din stânga */
+    }
+
+    input[type="date"]{
+        width: 50%;
+        height: 10px;
+        border-radius: 50px;
+    }
+    select[name="cinema"]{
+        width: 50%;
+        height:35px;
+        border-radius: 50px;
+    }
+    button{
+        width: 100%;
+        padding: 10px;
+        background-color: #459e35;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        border-radius: 50px;
+        transition: transform 0.5s, border-radius 0.4s;
+    }
 }
