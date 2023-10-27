@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background-color: #081100;
+}
+
+.container {
+    position:relative;
+}
+
+.croco_fundal{
+    display: block;
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    filter: brightness(50%);
+    z-index: 1;
+}
+
+.logo{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+    width: 10%;
+    height: auto;
+}
+
+.icon {
+    position: fixed;
+    top: 35px;
+    left: 20px;
+    z-index: 10;
+    color: whitesmoke;
+    font-size: 40px;
+    transition: all 0.3s;
+}
+
+.location_date_input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 15px #00FF00;
+    background-color: #003801;
+    padding: 30px 50px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    z-index: 2;
+    width: 60%;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-50%);
+    color: whitesmoke;
+}
+
+.column {
+    flex: 1;
+    text-align: center;
+}
+
+.title {
+    font-weight: bold;
+}
+
+select,
+input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+
+input[type="date"]{
+    width: 70%;
+    height: 10px;
+    border-radius: 50px;
+}
+select[name="cinema"]{
+    width:100%;
+    height:35px;
+    border-radius: 50px;
+}
+button{
+    width: 50%;
+    padding: 10px;
+    background-color: #459e35;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: transform 0.5s, border-radius 0.4s;
+}
+
+button:hover {
+    background-color: #f9a318;
+    transform: scale(1.2);
+    border-radius: 0px;
+}
+
+.error {
+    color: red;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Două coloane egale */
+    gap: 20px; /* Spațiu între coloane */
+    padding: 20px; /* Spațiu în jurul conținutului */
+}
+
+.text-box{
+
+    color: #468544;
+    padding: 10px;
+    margin-left: 10%;
+    position: relative;
+}
+
+.text-box p{
+    margin: 0;
+    background-color: #003801;
+    box-shadow: 0 0 15px #00FF00;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.image-colage {
+    flex: 2;
+    background-color: #081100; /* Culoarea de fundal pentru imaginile din dreapta */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-wrap: wrap; /* Imaginile să fie pe mai multe rânduri dacă depășesc spațiul disponibil */
+    padding: 20px;
+    gap: 10px; /* Spațiu între imagini */
+}
+
+.image-colage img {
+    max-width: 100%; /* Imaginile nu vor depăși lățimea containerului */
+    height: auto;
+    border: none;
+}
+
+.crop-image1{
+    object-fit: cover;
+    object-position: center top;
+    width: 100%;
+    height: 200%;
+}
