@@ -45,8 +45,9 @@ body {
     align-items: center;
     box-shadow: 0 0 15px #00FF00;
     background-color: #003801;
-    padding: 30px 50px;
-    border: 1px solid #000;
+    padding: 2% 0;
+    padding-left: 4%;
+    padding-right: 4%;
     border-radius: 10px;
     z-index: 2;
     width: 60%;
@@ -54,6 +55,7 @@ body {
     top: 50%;
     transform: translateY(-50%);
     color: whitesmoke;
+    font-size: 20px;
 }
 
 .column {
@@ -73,19 +75,21 @@ input{
 }
 
 select[name="cinema"]{
-    width: 70%;
+    width: 85%;
     height: 35px;
     border-radius: 50px;
+    margin-top: 10%;
 }
 
 input[type="date"]{
-    width: 70%;
+    width: 80%;
     height: 10px;
     border-radius: 50px;
+    margin-top: 10%;
 }
 
 button{
-    width: 50%;
+    width: 35%;
     padding: 10px;
     background-color: #459e35;
     color: #fff;
@@ -114,10 +118,8 @@ button:hover {
 }
 
 .text-box{
-
     color: #468544;
     padding: 10px;
-    /* margin-left: 10%; */
     position: relative;
     height: 100%;
 }
@@ -131,71 +133,15 @@ button:hover {
     text-align: justify;
 }
 
-/* .imgrow {
-    flex: 2;
-    background-color: #081100; 
-    display: flex;
-    flex-wrap: wrap; 
-    padding: 0 4px;
-    gap: 10px; 
-    align-items: center;
-} */
-
 @media (max-width: 1200px) {
-    .grid-container {
-        grid-template-columns: 1fr;
-    }
+    .grid-container { grid-template-columns: 1fr; }
 
-    .text-box {
-        margin-left: 0;
-    }
+    select[name="cinema"] { width: 75%; }
 
-    .imgrow {
-        margin-left: 0;
-    }
-
-    input[type="date"]{
-        width: 50%;
-        height: 10px;
-        border-radius: 50px;
-    }
-    select[name="cinema"]{
-        width: 70%;
-        height: 35px;
-        border-radius: 50px;
-    }
+    input[type="date"] { width: 70%; }
     
-    button{
-        width: 100%;
-        padding: 10px;
-        background-color: #459e35;
-        color: #fff;
-        border: none;
-        cursor: pointer;
-        border-radius: 50px;
-        transition: transform 0.5s, border-radius 0.4s;
-    }
+    button { width: 80%; }
 }
-
-/* .croco-pian,
-.croco-rau {
-    max-width: 100%;
-    width: 100%;
-    height:fit-content;
-}
-
-.imgcolumn {
-    flex: 1; 
-    padding: 0 4px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-}
-
-.imgcolumn img {
-    margin-top: 8px;
-    vertical-align: middle;
-} */
 
 .images{
     display:grid;
