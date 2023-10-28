@@ -74,7 +74,7 @@ input{
 
 select[name="cinema"]{
     width: 70%;
-    height:35px;
+    height: 35px;
     border-radius: 50px;
 }
 
@@ -90,7 +90,6 @@ button{
     background-color: #459e35;
     color: #fff;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
     border-radius: 50px;
     transition: transform 0.5s, border-radius 0.4s;
@@ -108,48 +107,51 @@ button:hover {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Două coloane egale */
-    gap: 20px; /* Spațiu între coloane */
-    padding: 20px; /* Spațiu în jurul conținutului */
+    grid-template-columns: 0.8fr 1.1fr;
+    gap: 20px;
+    padding: 20px;
+    margin: 5% 2%;
 }
 
 .text-box{
 
     color: #468544;
     padding: 10px;
-    margin-left: 10%;
+    /* margin-left: 10%; */
     position: relative;
+    height: 100%;
 }
 
 .text-box p{
     margin: 0;
     background-color: #003801;
     box-shadow: 0 0 15px #00FF00;
-    padding: 10px;
+    padding: 5%;
     border-radius: 5px;
+    text-align: justify;
 }
 
-.imgrow {
+/* .imgrow {
     flex: 2;
-    background-color: #081100; /* Culoarea de fundal pentru imaginile din dreapta */
+    background-color: #081100; 
     display: flex;
-    flex-wrap: wrap; /* Imaginile să fie pe mai multe rânduri dacă depășesc spațiul disponibil */
+    flex-wrap: wrap; 
     padding: 0 4px;
-    gap: 10px; /* Spațiu între imagini */
+    gap: 10px; 
     align-items: center;
-}
+} */
 
-@media (max-width: 767px) {
+@media (max-width: 1200px) {
     .grid-container {
-        grid-template-columns: 1fr; /* O singură coloană */
+        grid-template-columns: 1fr;
     }
 
     .text-box {
-        margin-left: 0; /* Eliminăm marginea din stânga */
+        margin-left: 0;
     }
 
     .imgrow {
-        margin-left: 0; /* Eliminăm marginea din stânga */
+        margin-left: 0;
     }
 
     input[type="date"]{
@@ -158,24 +160,24 @@ button:hover {
         border-radius: 50px;
     }
     select[name="cinema"]{
-        width: 50%;
-        height:35px;
+        width: 70%;
+        height: 35px;
         border-radius: 50px;
     }
+    
     button{
         width: 100%;
         padding: 10px;
         background-color: #459e35;
         color: #fff;
         border: none;
-        border-radius: 5px;
         cursor: pointer;
         border-radius: 50px;
         transition: transform 0.5s, border-radius 0.4s;
     }
 }
 
-.croco-pian,
+/* .croco-pian,
 .croco-rau {
     max-width: 100%;
     width: 100%;
@@ -183,14 +185,45 @@ button:hover {
 }
 
 .imgcolumn {
-    flex: 1; /* Le facem flexibil pe amândouă */
+    flex: 1; 
     padding: 0 4px;
     display: flex;
-    flex-direction: column; /* Le plasăm vertical */
-    align-items: center; /* Le centram orizontal */
+    flex-direction: column;
+    align-items: center; 
 }
 
 .imgcolumn img {
     margin-top: 8px;
     vertical-align: middle;
+} */
+
+.images{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.right-images{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+}
+
+.up-images{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.images img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    transition: transform 0.3s;
+    filter: sepia(100%) hue-rotate(20deg);
+}
+
+.images img:hover{
+    transform: scale(1.05);
+    filter: none;
 }

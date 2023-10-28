@@ -25,19 +25,17 @@
         <form class="location_date_input">
           <div class="column">
             <div class="title">Cinema</div>
-            <select name="cinema" id="cinema" required>
+            <select name="cinema" id="cinema" class="cinema" required>
               <option value="" selected>Alege cinema-ul</option>
               <option value="cinemaBucuresti">Crococinema București</option>
               <option value="cinemaCluj">Crococinema Cluj</option>
               <option value="cinemaIasi">Crococinema Iași</option>
               <option value="cinemaGalati">Crococinema Galați</option>
             </select>
-            <div id="cinema-error" class="error"></div>
           </div>
           <div class="column">
             <div class="title">Data</div>
             <input type="date" name="date" id="date" required />
-            <div id="date-error" class="error"></div>
           </div>
           <div class="column">
             <button type="submit" id="submit-button">Submit</button>
@@ -46,7 +44,6 @@
       </div>
     </div>
 
-    <br /><br /><br />
     <div class="grid-container">
       <div class="text-box">
         <p>
@@ -70,16 +67,20 @@
         </p>
       </div>
 
-      <div class="imgrow">
-            <div class="imgcolumn">
-                <img src="assets/img1.png" alt="croco-pian" class="croco-pian" />
+      <div class="images">
+            <div class="left-image">
+                <img src="assets/img1.png" alt="croco-pian" class="croco-pian"/>
             </div>
 
-            <div class="imgcolumn">
-                <!-- <img src="assets/img2.png">-->
-                <img src="assets/img3.jpg" alt="croco-rau" class="croco-rau">
-                <!-- <img src="assets/img4.jpg"> -->
-            </div>
+            <div class="right-images">
+                <div class="up-images">
+                  <img src="assets/img3.jpg" alt="croco-rau" class="croco-rau">
+                  <img src="assets/img4.jpg" alt="croco-foame" class="croco-foame">
+                </div>
+                <div>
+                  <img src="assets/img2.png" alt="coroco-lac" class="coroco-lac">
+                </div>
+                  </div>
       </div>
 
       </div>
