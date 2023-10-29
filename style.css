@@ -89,7 +89,7 @@ input[type="date"]{
     margin-top: 10%;
 }
 
-button{
+.submit-button-class{
     width: 35%;
     padding: 10px;
     background-color: #459e35;
@@ -100,7 +100,7 @@ button{
     transition: transform 0.5s, border-radius 0.4s;
 }
 
-button:hover {
+.submit-button-class:hover {
     background-color: #f9a318;
     transform: scale(1.2);
     border-radius: 0px;
@@ -184,11 +184,109 @@ button:hover {
     width: 100%;
     height: 100%;
     border-radius: 20px;
-    transition: transform 0.3s;
+    transition: transform 0.3s, filter 0.5s; /* schema */
     filter: sepia(100%) hue-rotate(20deg);
 }
 
 .images img:hover{
     transform: scale(1.05);
     filter: none;
+}
+
+.carrousel-container{
+    background-color: #003801;
+    align-items: center;
+    box-shadow: 0 0 15px #00FF00;
+    margin: 10% 0%;
+    padding-bottom: 5%;
+}
+
+.carrousel-title {
+    text-align: center;
+    font-weight: 900;
+    color: #468544;
+    font-size: 50px;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.film-title p{
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.film-box {
+    background-color: #430917;
+    box-shadow: inset 0 0 15px #d41215;
+    color:#f9a318;
+    margin: 0% 30%;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.film-title{
+    text-align: center;
+    font-weight: 800;
+}
+
+.film-poster{
+    width: 40%;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.671);
+    height: auto;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+}
+
+.film-description{
+    background-color:#f9a318;
+    color:black;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.671);
+    width: 80%;
+    border-radius: 15px;
+    text-align: justify;
+    padding: 0.5px 10px;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-25%);
+    opacity: 80%;
+}
+
+
+.rating {
+    text-align: center;
+    margin-top: 0;
+}
+
+.rating i {
+    font-size: 15px;
+    margin: 0 2px;
+}
+
+.reserve-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.reserve-button button {
+    background-color: #861006;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.671);
+    width: 150px;
+    height: 40px;
+    border-radius: 15px;
+    margin-bottom: 10%;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+    transition: text-allign 1s, background-color 0.5s, border-radius 0.3s, font-size 0.3s;
+}
+
+.reserve-button button:hover {
+    background-color: #640b09; /* Culoare grena la hover */
+    border-radius: 0px;
+    font-size: 20px;
+    text-align: center;
 }
