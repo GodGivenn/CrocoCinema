@@ -106,14 +106,12 @@ input[type="date"]{
     border-radius: 0px;
 }
 
-.error {
-    color: red;
-}
+/*-------------------------------------------------------------------*/
 
 .grid-container {
     display: grid;
     grid-template-columns: 0.8fr 1.1fr;
-    gap: 20px;
+    gap: 2%;
     padding: 20px;
     margin: 5% 2%;
 }
@@ -134,64 +132,40 @@ input[type="date"]{
     text-align: justify;
 }
 
-@media (max-width: 767px) {
-    .grid-container { grid-template-columns: 1fr; }
-
-    .location_date_input {
-        width: 80%;
-        min-width: 250px;
-    }
-
-    select[name="cinema"] { width: 75%; }
-
-    input[type="date"] { width: 70%; }
-    
-    button { width: 80%; font-size: 16px; }
-    
-    .logo {
-        width: 15%;
-        top: 2%;
-        right: 2%;
-    }
-
-    .icon {
-        font-size: 30px;
-        top: 4%;
-        left: 4%;
-    }
-}
-
-
 .images{
     display:grid;
     grid-template-columns: 1fr 1fr;
-    gap: 15px;
+    gap: 2%;
 }
 
 .right-images{
     display: grid;
     grid-template-rows: 1fr 1fr;
-    gap: 15px;
+    gap: 2%;
 }
 
 .up-images{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 15px;
+    gap: 2%;
 }
 
 .images img{
     width: 100%;
     height: 100%;
-    border-radius: 20px;
+    border-radius: 10px;
     transition: transform 0.3s, filter 0.5s; /* schema */
     filter: sepia(100%) hue-rotate(20deg);
+    object-fit: cover;
 }
 
 .images img:hover{
     transform: scale(1.05);
     filter: none;
 }
+
+
+/*-------------------------------------------------------------------*/
 
 .carrousel-container{
     background-color: #003801;
@@ -230,7 +204,7 @@ input[type="date"]{
 }
 
 .film-poster{
-    width: 40%;
+    width: 35%;
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.671);
     height: auto;
     border-radius: 5px;
@@ -240,6 +214,7 @@ input[type="date"]{
 
 .film-description{
     background-color:#f9a318;
+    justify-content: space-between;
     color:black;
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.671);
     width: 80%;
@@ -247,11 +222,12 @@ input[type="date"]{
     text-align: justify;
     padding: 0.5px 10px;
     margin: 0 auto;
-    top: 50%;
+    top: 25%;
     transform: translateY(-25%);
     opacity: 80%;
+    max-height: 100%;
+    overflow: hidden;
 }
-
 
 .rating {
     text-align: center;
@@ -285,8 +261,47 @@ input[type="date"]{
 }
 
 .reserve-button button:hover {
-    background-color: #640b09; /* Culoare grena la hover */
+    background-color: #640b09;
     border-radius: 0px;
     font-size: 20px;
     text-align: center;
+}
+
+@media (max-width: 767px) {
+    .grid-container { grid-template-columns: 1fr;margin-bottom: 30%;}
+
+    .images{ grid-template-columns: 1fr;}
+
+    .images img{filter: none;}
+    .location_date_input {
+        width: 80%;
+        min-width: 250px;
+    }
+
+    select[name="cinema"] { width: 75%; }
+
+    input[type="date"] { width: 70%; }
+    
+    button { width: 80%; font-size: 16px; }
+    
+    .logo {
+        width: 15%;
+        top: 2%;
+        right: 2%;
+    }
+
+    .icon {
+        font-size: 30px;
+        top: 4%;
+        left: 4%;
+    }
+
+    .film-box {
+        margin: 0 10%;
+    }
+    .film-description {
+        top: 0;
+        transform: translateY(-10%);
+        font-size: smaller;
+    }
 }
