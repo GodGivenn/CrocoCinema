@@ -14,6 +14,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Roboto"
     />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
   </head>
   <body>
     <div class="container">
@@ -90,6 +91,9 @@
 
     <div class="carrousel-container">
       <h1 class="carrousel-title">Filmele zilei</h1>
+      <div class="carrousel-films">
+        <button class="prev-arrow">←</button>
+
         <div class="film-box" name="Puss in boots">
           <div class="film-title">
               <p>Puss in Boots</p>
@@ -118,7 +122,7 @@
             <button>Rezervă</button>
           </div>
         </div>
-
+        
         <!-- ------------------------------------------ -->
         
         <div class="film-box" name="Harry Potter">
@@ -153,8 +157,71 @@
 
         <!-- ------------------------------------------ -->
         
-        
-        
+        <div class="film-box" name="Lord of the Rings">
+          <div class="film-title">
+              <p>Lord of the Rings</p>
+          </div>
+          <div>
+            <img src="assets/lord_of_the_rings.jpg" alt="lord_of_the_rings_poster" class="film-poster">
+          </div>
+
+          <div class="film-description">
+              <p>Acest film este a treia parte a trilogiei prequel din seria "Star Wars" și prezintă
+                ascensiunea lui Darth Vader. Războiul dintre Jedi și Sith se intensifică, iar Anakin
+                Skywalker, ucenicul lui Obi-Wan Kenobi, se confruntă cu tentația întunecată a Laturii
+                Întunecate a Forței. În cele din urmă, acest film dezvăluie transformarea lui Anakin în
+                Darth Vader și prefigurează evenimentele care vor conduce la trilogia originală a
+                seriei.</p>
+          </div>
+
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+
+          <div class="reserve-button">
+            <button>Rezervă</button>
+          </div>
+        </div>
+
+        <!-- ------------------------------------------ -->
+        <div class="film-box" name="Star Wars">
+          <div class="film-title">
+              <p>Star Wars</p>
+          </div>
+          <div>
+            <img src="assets/star_wars.jpg" alt="star_wars_poster" class="film-poster">
+          </div>
+
+          <div class="film-description">
+              <p>Primul film din trilogia "Stăpânul Inelelor" îl prezintă pe Frodo Baggins, un simplu
+                hobbit, care primește misiunea de a distruge un inel malefic, care conferă putere
+                supremă. El se alătură unui grup divers de tovarăși, inclusiv Gandalf, Aragorn,
+                Legolas și Gimli, pentru a forma Frăția Inelului și a preveni întoarcerea răului în
+                Pământul de Mijloc. Călătoria lor este plină de aventuri și pericole, iar inelul trebuie
+                dus la Muntele Doom pentru a fi distrus.</p>
+          </div>
+
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+
+          <div class="reserve-button">
+            <button>Rezervă</button>
+          </div>
+        </div>
+
+        <!-- ------------------------------------------ -->
+        <button class="next-arrow">→</button>
+
+      </div>
     </div>
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
@@ -164,4 +231,8 @@
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
   </body>
+
+  <script src="javascripts/carousel.js"></script>
+
 </html>
+

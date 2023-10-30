@@ -173,6 +173,7 @@ input[type="date"]{
     box-shadow: 0 0 15px #00FF00;
     margin: 10% 0%;
     padding-bottom: 5%;
+    max-width: 100%;
 }
 
 .carrousel-title {
@@ -193,9 +194,10 @@ input[type="date"]{
     background-color: #430917;
     box-shadow: inset 0 0 15px #d41215;
     color:#f9a318;
-    margin: 0% 30%;
+    margin: 0% 5%;
     border-radius: 10px;
     padding: 5px;
+    height: 45%;
 }
 
 .film-title{
@@ -204,9 +206,9 @@ input[type="date"]{
 }
 
 .film-poster{
-    width: 35%;
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.671);
-    height: auto;
+    width: 175px;
+    height: 275px;
     border-radius: 5px;
     display: block;
     margin: 0 auto;
@@ -217,7 +219,8 @@ input[type="date"]{
     justify-content: space-between;
     color:black;
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.671);
-    width: 80%;
+    max-width: 80%;
+    height: auto;
     border-radius: 15px;
     text-align: justify;
     padding: 0.5px 10px;
@@ -267,6 +270,51 @@ input[type="date"]{
     text-align: center;
 }
 
+.carrousel-films {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1px; /* Spațiul între butoane și caseta de film */
+  }
+  
+  .prev-arrow,
+.next-arrow {
+    background-color: #459e35;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    padding: 1%;
+    border-radius: 50%;
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.671);
+    transition: background-color 0.5s;
+}
+
+  
+  .prev-arrow {
+    /* Spațiul dintre butonul din stânga și caseta de film */
+    margin-left: 20%;
+    margin-right: 0;
+  }
+  
+  .next-arrow {
+    /* Spațiul dintre butonul din dreapta și caseta de film */
+    margin-left: 0;
+    margin-right: 20%;
+  }
+  
+.prev-arrow:hover,
+.next-arrow:hover{
+    background-color: #f9a318;
+}
+
+
 @media (max-width: 767px) {
     .grid-container { grid-template-columns: 1fr;margin-bottom: 30%;}
 
@@ -297,11 +345,27 @@ input[type="date"]{
     }
 
     .film-box {
-        margin: 0 10%;
+        margin: 0 3%;
     }
     .film-description {
         top: 0;
         transform: translateY(-10%);
         font-size: smaller;
     }
+
+    .prev-arrow {
+        margin-left: 1%;
+        margin-right: 0;
+        width: 30px;
+        height: 30px;
+      }
+      
+      .next-arrow {
+        margin-left: 0;
+        margin-right: 1%;
+        width: 30px;
+        height: 30px;
+      }
+
+    
 }
