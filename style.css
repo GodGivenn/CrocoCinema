@@ -82,7 +82,7 @@ select[name="cinema"]{
     margin-top: 10%;
 }
 
-input[type="date"]{
+.date-input{
     width: 80%;
     height: 10px;
     border-radius: 50px;
@@ -260,7 +260,7 @@ input[type="date"]{
     cursor: pointer;
     font-size: 18px;
     text-align: center;
-    transition: text-allign 1s, background-color 0.5s, border-radius 0.3s, font-size 0.3s;
+    transition: background-color 0.5s, border-radius 0.5s, font-size 0.5s;
 }
 
 .reserve-button button:hover {
@@ -313,6 +313,96 @@ input[type="date"]{
 .next-arrow:hover{
     background-color: #f9a318;
 }
+
+
+/*-------------------------------------------------------------------*/
+
+.my-form{
+    display: grid;
+    grid-template-columns: 0.75fr 1.25fr;
+    margin-left: 10%;
+    margin-right: 25%;
+    padding-top: 3%;
+    padding-left: 2%;
+    gap: 0%;
+    border-radius:25px;
+    color:white;
+    background-color: #003801;
+    box-shadow: 0 0 15px #00FF00;
+}
+
+.form-group{
+    width: 50%;
+    height: auto;
+}
+
+.form-field {
+    margin: 10px 0;
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+
+.form-field-seats{
+    width: 92%;
+    padding: 5px 10px;
+    margin: 10px 0;
+    border-radius: 50px;
+}
+
+.form-field-data{
+
+    padding: 5px 10px;
+    margin: 10px 0;
+    border-radius: 50px;
+}
+
+.form-submit-button{
+    width:fit-content;
+    height: fit-content;
+    padding: 2% 6%;
+    background-color: #459e35;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: transform 0.5s, border-radius 0.4s;
+}
+
+.form-submit-button:hover {
+    background-color: #f9a318;
+    border-radius: 0px;
+    zoom: 110%;
+}
+
+.form-glasses{
+    display: flex;
+}
+/* 
+
+    gap: 2%;
+    padding: 20px;
+    margin: 5% 2%;
+    
+    .location_date_input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 15px #00FF00;
+    background-color: #003801;
+    padding: 2% 0;
+    padding-left: 4%;
+    padding-right: 4%;
+    border-radius: 10px;
+    z-index: 2;
+    width: 60%;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-50%);
+    color: whitesmoke;
+    font-size: 20px;
+} */
+
+
 
 
 @media (max-width: 767px) {

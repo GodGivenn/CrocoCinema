@@ -14,7 +14,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Roboto"
     />
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   </head>
   <body>
     <div class="container">
@@ -40,7 +40,7 @@
           </div>
           <div class="column">
             <div class="title">Data</div>
-            <input type="date" name="date" id="date" required />
+            <input type="date" name="date" id="date" class="date-input" required />
           </div>
           <div class="column">
             <button class="submit-button-class type="submit" id="submit-button">Submit</button>
@@ -223,13 +223,89 @@
 
       </div>
     </div>
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+
+
+
+
+
+
+
+
+    <!-- ------------------------------------------------------------------- -->
+
+    <form action="procesare.php" method="post" class="my-form">
+      <div class="form-group">
+        <label>Nume:</label>
+        <input type="text" id="nume" name="nume" class="form-field" required>
+    </div>
+    <div class="form-group">
+        <label>Rand:</label>
+        <select id="rand" name="rand" class="form-field" required>
+          <option value="" selected></option>
+          <option value="rand1">Rând 1</option>
+          <option value="rand2">Rând 2</option>
+          <option value="rand3">Rând 3</option>
+          <option value="rand4">Rând 4</option>
+          <option value="rand5">Rând 5</option>
+          <option value="rand6">Rând 6</option>
+          <option value="rand7">Rând 7</option>
+          <option value="rand8">Rând 8</option>
+          <option value="rand9">Rând 9</option>
+          <option value="rand10">Rând 10</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label>Prenume:</label>
+        <input type="text" id="prenume" name="prenume" class="form-field" required>
+    </div>
+    <div class="form-group">
+        <label>Spectacol:</label>
+        <select id="spectacol" name="spectacol" class="form-field" required>
+            <option value="" selected></option>
+            <option value="spectacol1">Croco si Julieta</option>
+            <option value="spectacol2">Crocomer</option>
+            <option value="spectacol3">Shape of water</option>
+            <option value="spectacol4">50 shades of croco</option>
+        </select>
+        </select>
+    </div>
+    <div class="form-group">
+        <label>Email:</label>
+        <input type="email" id="email" name="email" placeholder="example@gmail.com" class="form-field" required>
+    </div>
+    <div class="form-group">
+        <label>Număr de Locuri:</label>
+        <input type="number" id="locuri" name="locuri" min="1" max="10" step="1" class="form-field-seats" required>
+    </div>
+    <div class="form-group">
+        <label>Telefon:</label>
+        <input type="tel" id="telefon" name="telefon" placeholder="07xxxxxxxx" class="form-field" required>
+    </div>
+    <div class="form-group">
+        <label>Doriți ochelari 3D?</label>
+        <br><br>
+        <div class="form-glasses">
+            <label>Da</label>
+            <input type="radio" id="ochelari-da" name="ochelari" value="da">
+            <label>Nu</label>
+            <input type="radio" id="ochelari-no" name="ochelari" value="nu">
+        </div>
+    </div>
+    <div class="form-group">
+        <label>Data:</label>
+        <input type="date" id="data" name="data" class="form-field-data" required>
+    </div>
+      
+      
+      <button type="submit" id="trimite-buton" class="form-field form-submit-button">Submit</button>
+  </form>
+
+  <br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br>
   </body>
 
   <script src="javascripts/carousel.js"></script>
