@@ -92,9 +92,15 @@
     <div class="carrousel-container">
       <h1 class="carrousel-title">Filmele zilei</h1>
       <div class="carrousel-films">
-        <button class="prev-arrow">←</button>
+        <!-- <button class="prev-arrow">←</button> -->
 
-        <div class="film-box" name="Puss in boots">
+
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+
+
+
+        <div class="film-box swiper-slide" name="Puss in boots">
           <div class="film-title">
               <p>Puss in Boots</p>
           </div>
@@ -125,7 +131,7 @@
         
         <!-- ------------------------------------------ -->
         
-        <div class="film-box" name="Harry Potter">
+        <div class="film-box swiper-slide" name="Harry Potter">
           <div class="film-title">
               <p>Harry Potter</p>
           </div>
@@ -157,7 +163,7 @@
 
         <!-- ------------------------------------------ -->
         
-        <div class="film-box" name="Lord of the Rings">
+        <div class="film-box swiper-slide" name="Lord of the Rings">
           <div class="film-title">
               <p>Lord of the Rings</p>
           </div>
@@ -188,7 +194,7 @@
         </div>
 
         <!-- ------------------------------------------ -->
-        <div class="film-box" name="Star Wars">
+        <div class="film-box swiper-slide" name="Star Wars">
           <div class="film-title">
               <p>Star Wars</p>
           </div>
@@ -219,12 +225,26 @@
         </div>
 
         <!-- ------------------------------------------ -->
-        <button class="next-arrow">→</button>
+        <!-- <button class="next-arrow">→</button> -->
 
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
       </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 
 
 
@@ -235,10 +255,30 @@
     <!-- ------------------------------------------------------------------- -->
 
     <form action="procesare.php" method="post" class="my-form">
+      <div class="form-left">
       <div class="form-group">
         <label>Nume:</label>
         <input type="text" id="nume" name="nume" class="form-field" required>
-    </div>
+      </div>
+    <div class="form-group">
+      <label>Prenume:</label>
+      <input type="text" id="prenume" name="prenume" class="form-field" required>
+  </div>
+  <div class="form-group">
+    <label>Email:</label>
+    <input type="email" id="email" name="email" placeholder="example@gmail.com" class="form-field" required>
+</div>
+<div class="form-group">
+  <label>Telefon:</label>
+  <input type="tel" id="telefon" name="telefon" placeholder="07xxxxxxxx" class="form-field" required>
+</div>
+<div class="form-group">
+  <label>Data:</label>
+  <input type="date" id="data" name="data" class="form-field-data" required>
+</div>
+  </div>
+  <div class="right-form">
+    <div class="right-form-sizing">
     <div class="form-group">
         <label>Rand:</label>
         <select id="rand" name="rand" class="form-field" required>
@@ -255,10 +295,7 @@
           <option value="rand10">Rând 10</option>
         </select>
     </div>
-    <div class="form-group">
-        <label>Prenume:</label>
-        <input type="text" id="prenume" name="prenume" class="form-field" required>
-    </div>
+    
     <div class="form-group">
         <label>Spectacol:</label>
         <select id="spectacol" name="spectacol" class="form-field" required>
@@ -270,17 +307,11 @@
         </select>
         </select>
     </div>
-    <div class="form-group">
-        <label>Email:</label>
-        <input type="email" id="email" name="email" placeholder="example@gmail.com" class="form-field" required>
-    </div>
+    
     <div class="form-group">
         <label>Număr de Locuri:</label>
         <input type="number" id="locuri" name="locuri" min="1" max="10" step="1" class="form-field-seats" required>
     </div>
-    <div class="form-group">
-        <label>Telefon:</label>
-        <input type="tel" id="telefon" name="telefon" placeholder="07xxxxxxxx" class="form-field" required>
     </div>
     <div class="form-group">
         <label>Doriți ochelari 3D?</label>
@@ -292,14 +323,11 @@
             <input type="radio" id="ochelari-no" name="ochelari" value="nu">
         </div>
     </div>
-    <div class="form-group">
-        <label>Data:</label>
-        <input type="date" id="data" name="data" class="form-field-data" required>
-    </div>
-      
-      
       <button type="submit" id="trimite-buton" class="form-field form-submit-button">Submit</button>
-  </form>
+    </div>
+      <img class="croco-work" src="assets/crocoWork.jpg" alt="croco-work">
+
+    </form>
 
   <br><br><br><br><br><br><br><br><br><br><br><br>
   <br><br><br><br><br><br><br><br><br><br><br><br>

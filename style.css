@@ -83,8 +83,9 @@ select[name="cinema"]{
 }
 
 .date-input{
-    width: 80%;
-    height: 10px;
+    border: none;
+    width: 85%;
+    height: 15px;
     border-radius: 50px;
     margin-top: 10%;
 }
@@ -194,10 +195,10 @@ select[name="cinema"]{
     background-color: #430917;
     box-shadow: inset 0 0 15px #d41215;
     color:#f9a318;
-    margin: 0% 5%;
+    margin: 0% 25%;
     border-radius: 10px;
     padding: 5px;
-    height: 45%;
+    height: 40%;
 }
 
 .film-title{
@@ -212,6 +213,7 @@ select[name="cinema"]{
     border-radius: 5px;
     display: block;
     margin: 0 auto;
+    object-fit: cover;
 }
 
 .film-description{
@@ -329,6 +331,7 @@ select[name="cinema"]{
     color:white;
     background-color: #003801;
     box-shadow: 0 0 15px #00FF00;
+    border: none;
 }
 
 .form-group{
@@ -377,6 +380,21 @@ select[name="cinema"]{
 .form-glasses{
     display: flex;
 }
+
+
+
+
+.croco-work{
+  position: absolute;
+  margin-top: -3%; /* Poziționează imaginea în partea de sus a containerului părinte */
+  right: 10%; /* Poziționează imaginea în partea dreaptă a containerului părinte */
+  width: 20%; /* Ajustează lățimea imaginii la dimensiunea dorită */
+  height: auto; /* Ajustează înălțimea imaginii la dimensiunea dorită */
+  z-index: 2; /* Ajustează indexul z pentru a se asigura că imaginea este deasupra altor elemente */
+    border-radius: 50% 0;
+    border: 10px solid #49a236;
+    border-style:dashed;
+}
 /* 
 
     gap: 2%;
@@ -404,6 +422,24 @@ select[name="cinema"]{
 
 
 
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: fit-content;
+  }
+
+
+
+
+
 
 @media (max-width: 767px) {
     .grid-container { grid-template-columns: 1fr;margin-bottom: 30%;}
@@ -416,11 +452,11 @@ select[name="cinema"]{
         min-width: 250px;
     }
 
-    select[name="cinema"] { width: 75%; }
+    select[name="cinema"] { width: 110%; }
 
-    input[type="date"] { width: 70%; }
+    .date-input { width: 60%; }
     
-    button { width: 80%; font-size: 16px; }
+    .submit-button-class { width: 80%; font-size: 16px; }
     
     .logo {
         width: 15%;
@@ -435,7 +471,7 @@ select[name="cinema"]{
     }
 
     .film-box {
-        margin: 0 3%;
+        margin: 0 5%;
     }
     .film-description {
         top: 0;
@@ -443,7 +479,7 @@ select[name="cinema"]{
         font-size: smaller;
     }
 
-    .prev-arrow {
+    /* .prev-arrow {
         margin-left: 1%;
         margin-right: 0;
         width: 30px;
@@ -455,7 +491,23 @@ select[name="cinema"]{
         margin-right: 1%;
         width: 30px;
         height: 30px;
-      }
+      } */
 
-    
+    .my-form{ grid-template-columns: 1fr;
+    margin-right: 10%;
+    padding: 15px;}
+
+    select {
+        width: 105%;
+        padding: 10px;
+        margin: 10px 0;
+    }
+    input{
+        width: 90%;
+        padding: 10px;
+        margin: 10px 0;
+    }
+    .croco-work{
+        display: none;
+    }
 }
