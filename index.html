@@ -92,7 +92,6 @@
     <div class="carrousel-container">
       <h1 class="carrousel-title">Filmele zilei</h1>
       <div class="carrousel-films">
-        <!-- <button class="prev-arrow">←</button> -->
 
 
         <div class="swiper mySwiper">
@@ -225,7 +224,6 @@
         </div>
 
         <!-- ------------------------------------------ -->
-        <!-- <button class="next-arrow">→</button> -->
 
       </div>
       <div class="swiper-button-next"></div>
@@ -281,7 +279,7 @@
     <div class="right-form-sizing">
     <div class="form-group">
         <label>Rand:</label>
-        <select id="rand" name="rand" class="form-field" required>
+        <select id="rand" name="rand" class="form-field row" required>
           <option value="" selected></option>
           <option value="rand1">Rând 1</option>
           <option value="rand2">Rând 2</option>
@@ -298,7 +296,7 @@
     
     <div class="form-group">
         <label>Spectacol:</label>
-        <select id="spectacol" name="spectacol" class="form-field" required>
+        <select id="spectacol" name="spectacol" class="form-field film" required>
             <option value="" selected></option>
             <option value="spectacol1">Croco si Julieta</option>
             <option value="spectacol2">Crocomer</option>
@@ -314,29 +312,34 @@
     </div>
     </div>
     <div class="form-group">
-        <label>Doriți ochelari 3D?</label>
-        <br><br>
-        <div class="form-glasses">
-            <label>Da</label>
-            <input type="radio" id="ochelari-da" name="ochelari" value="da">
-            <label>Nu</label>
-            <input type="radio" id="ochelari-no" name="ochelari" value="nu">
-        </div>
+      <label>Doriți ochelari 3D?</label>
+      <br><br>
+      <div class="form-glasses">
+        <label for="ochelari-da">Da</label>
+        <input type="radio" id="ochelari-da" name="ochelari" value="da">
+        <label for="ochelari-no">Nu</label>
+        <input type="radio" id="ochelari-no" name="ochelari" value="nu">
+      </div>
     </div>
       <button type="submit" id="trimite-buton" class="form-field form-submit-button">Submit</button>
     </div>
       <img class="croco-work" src="assets/crocoWork.jpg" alt="croco-work">
-
+      <img class="croco-bath" src="assets/crocoBath.jpg" alt="croco-bath">
     </form>
 
-  <br><br><br><br><br><br><br><br><br><br><br><br>
-  <br><br><br><br><br><br><br><br><br><br><br><br>
-  <br><br><br><br><br><br><br><br><br><br><br><br>
-  <br><br><br><br><br><br><br><br><br><br><br><br>
-  <br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="bottom-header">
+      <div class="left-icon">
+        <a href="https://www.youtube.com/user/siscotii"><i class="fab fa-youtube"></i></a>
+      </div>
+      <div class="center-text">
+        <p>✨A website developed with care by Crocos✨</p>
+      </div>
+      <div class="right-icons">
+        <a href="https://www.facebook.com/sisc.ase/?locale=ro_RO"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/sisc.ase/"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
   </body>
-
-  <script src="javascripts/carousel.js"></script>
 
 </html>
 
