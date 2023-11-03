@@ -289,7 +289,7 @@ select[name="cinema"] {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1px; /* Spațiul între butoane și caseta de film */
+  margin: 1px;
 }
 
 .prev-arrow,
@@ -312,13 +312,11 @@ select[name="cinema"] {
 }
 
 .prev-arrow {
-  /* Spațiul dintre butonul din stânga și caseta de film */
   margin-left: 20%;
   margin-right: 0;
 }
 
 .next-arrow {
-  /* Spațiul dintre butonul din dreapta și caseta de film */
   margin-left: 0;
   margin-right: 20%;
 }
@@ -658,7 +656,7 @@ label[for="ochelari-no"] {
     font-weight: bold;
   }
   .ham-menu {
-    width: 20vw; /* sau orice altă valoare potrivită */
+    width: 20vw;
   }
 
   .nav-logos{
@@ -799,6 +797,6 @@ label[for="ochelari-no"] {
   }
 
   .ham-menu {
-    width: 50vw; /* sau orice altă valoare potrivită */
+    width: 50vw; 
   }
 }
