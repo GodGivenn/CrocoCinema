@@ -15,12 +15,52 @@
       href="https://fonts.googleapis.com/css?family=Roboto"
     />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <div class="container">
+    <input type="checkbox" id="ham-menu">
+    <label for="ham-menu">
+      <div class="hide-des">
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+      </div>
+
+    </label>
+    <div class="full-page-green"></div>
+    <div class="ham-menu">
+      <ul class="centre-text bold-text nav-top">
+        <a class="no-underline" href="#acasa" style="color:white;"><p class="highlight-hover-over-text">Acasă</p></a>
+        <a class="no-underline" href="#descriere"  style="color:white;"><p class="highlight-hover-over-text">Descriere</p></a>
+        <a class="no-underline" href="#filme" style="color:white;"><p class="highlight-hover-over-text">Filme</p></a>
+        <a class="no-underline" href="#rezervare" style="color:white;"><p class="highlight-hover-over-text">Rezervare</p></a>
+
+      </ul>
+
+      <div class="nav-logos">
+      <img class="logo1 highlight-hover-over" src="assets/logo1.png" alt="logo1">
+      <img class="logo2 highlight-hover-over" src="assets/logo2.png" alt="logo2">
+    </div>
+    </div>
+
+
+
+    <div class="container" id="acasa">
       <div>
         <img class="logo" src="assets/logo.png" alt="logo" />
-        <i class="fas fa-bars icon"></i>
+        <!-- <i class="fas fa-bars icon"></i> -->
+
+
         <img
           class="croco_fundal"
           src="assets/croco-fundal.png"
@@ -43,13 +83,13 @@
             <input type="date" name="date" id="date" class="date-input" required />
           </div>
           <div class="column">
-            <button class="submit-button-class type="submit" id="submit-button">Submit</button>
+            <button class="submit-button-class" type="submit" id="submit-button">Submit</button>
           </div>
         </form>
       </div>
     </div>
 
-    <div class="grid-container">
+    <div class="grid-container" id="descriere">
       <div class="text-box">
         <p>
           Crococinema este un loc magic unde lumea fascinantă a filmului poate
@@ -89,7 +129,7 @@
       </div>
     </div>
 
-    <div class="carrousel-container">
+    <div class="carrousel-container" id="filme">
       <h1 class="carrousel-title">Filmele zilei</h1>
       <div class="carrousel-films">
 
@@ -252,7 +292,7 @@
 
     <!-- ------------------------------------------------------------------- -->
 
-    <form action="procesare.php" method="post" class="my-form">
+    <form action="procesare.php" method="post" class="my-form" id="rezervare">
       <div class="form-left">
       <div class="form-group">
         <label>Nume:</label>
@@ -268,7 +308,7 @@
 </div>
 <div class="form-group">
   <label>Telefon:</label>
-  <input type="tel" id="telefon" name="telefon" placeholder="07xxxxxxxx" class="form-field" required>
+  <input type="tel" id="telefon" name="telefon" placeholder="07xxxxxxxx" class="form-field" required pattern="07[0-9]{8}">
 </div>
 <div class="form-group">
   <label>Data:</label>
